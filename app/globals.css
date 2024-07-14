@@ -31,3 +31,67 @@ body {
     text-wrap: balance;
   }
 }
+
+.table-container {
+  margin: 20px auto;
+  width: 80%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+tbody tr{
+  background-color: #f9f9f9;
+}
+
+.custom-select {
+    display: inline-block;
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+
+  .custom-select select {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer; 
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  .custom-select select:focus {
+    outline: none; 
+  }
+
+  .custom-select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; 
+  }
+
+  .custom-select select option {
+    padding: 10px;
+  }
